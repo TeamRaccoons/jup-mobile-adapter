@@ -1,0 +1,47 @@
+{
+  "author": "worlddlck",
+  "name": "@jup-ag/jup-mobile-adapter",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "type-check": "tsc --noEmit",
+    "lint": "prettier --check . && eslint --cache -- .",
+    "lint:fix": "prettier --write . && eslint --cache --fix"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/adapters.mjs",
+  "module": "./dist/adapters.mjs",
+  "types": "./dist/adapters.d.mts",
+  "exports": {
+    ".": {
+      "types": "./dist/adapters.d.mts",
+      "import": "./dist/adapters.mjs",
+      "default": "./dist/adapters.mjs"
+    }
+  },
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {},
+  "peerDependencies": {
+    "next": ">=13",
+    "react": ">=18",
+    "@reown/appkit": ">=1.6.0",
+    "@reown/appkit-adapter-solana": ">=1.6.0",
+    "@reown/appkit-wallet-button": ">=1.6.0",
+    "@solana/wallet-adapter-base": ">=0.9.0",
+    "@solana/web3.js": ">=1.95.0"
+  },
+  "devDependencies": {
+    "@types/node": "20.11.24",
+    "@types/react": "18.2.61",
+    "@types/react-dom": "18.2.19",
+    "tsup": "8.2.4",
+    "typescript": "5.3.3"
+  },
+  "browserslist": [
+    "last 2 Chrome versions"
+  ]
+}
