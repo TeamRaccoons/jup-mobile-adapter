@@ -1,7 +1,7 @@
 {
   "author": "worlddlck",
   "name": "@jup-ag/jup-mobile-adapter",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
@@ -26,7 +26,6 @@
   "license": "ISC",
   "dependencies": {},
   "peerDependencies": {
-    "next": ">=13",
     "react": ">=18",
     "@reown/appkit": ">=1.6.0",
     "@reown/appkit-adapter-solana": ">=1.6.0",
